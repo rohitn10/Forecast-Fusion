@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Weather App</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="app-wrap">
+            <title>Forecast Fusion</title>
+            <header>
+                <input type="text" autocomplete="on" class="search-box" placeholder="Search for a city...">
+                <datalist id="autocomplete-options"></datalist>
+                <button id="search-button">Search</button>
+            </header>
+            <main>
+                <section class="location">
+                    <div class="city">Gainesville, FL</div>
+                    <div class="date">Thursday 24 August 2023</div>
+                </section>
+                <div class="current">
+                    <div class="temperature">87<span>°F</span></div>
+                    <div class="weather">Sunny</div>
+                    <div class="hi-low">H:60° L:98°</div>
+                </div>
+            </main>
+        </div>
+        <script src="main.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "roboto";
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.app-wrap
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.50), rgba(0,0,0,0.75));
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 250px 50px 50px;
+}
+
+header input
+{
+    /*Styling of the user search box*/
+    width: fit-content;
+    max-width: 500px;
+    padding: 10px 10px;
+    border: none black;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px 20px 20px 20px;
+    border: 2px solid lightsalmon;
+    margin-right: 10px;
+
+    
+    /*Styling of the text input*/
+    color: blue;
+    font-size: medium;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+
+header input:focus
+{
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid orange;
+    transition: 0.5s ease-out;
+}
+
+button
+{
+    float: left;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b67225;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background: rgb(199, 77, 32);
+}
+
+main
+{
+    flex: auto;
+    padding: 5px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city
+{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.location .date
+{
+    color: white;
+    font-size: 17px;
+}
+
+.current .temperature
+{
+    color: white;
+    font-size: 75px;
+    /*font-weight: 500;*/
+    margin: 25px;
+    text-shadow: 3px 9px rgba(0,0,0,0.50);
+}
+
+.current .temperature span
+{
+    font-weight: 500;
+}
+
+.current .weather
+{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 0px 4px rgba(0,0,0,0.50);
+}
+
+.current .hi-low
+{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-shadow: 0px 5px rgba(0,0,0,0.50);
+}
